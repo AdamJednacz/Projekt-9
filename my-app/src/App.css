@@ -456,6 +456,7 @@ header .container .header_menu .header_menu_item:first-of-type::after {
 .mission {
   display: flex;
   justify-content: center;
+  padding: 3em 0;
 }
 .mission .container {
   display: flex;
@@ -488,6 +489,139 @@ header .container .header_menu .header_menu_item:first-of-type::after {
   font-size: 24px;
 }
 
+.projects_main {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+}
+.projects_main .container {
+  display: flex;
+  flex-direction: column;
+}
+.projects_main h1 {
+  color: #BDBDBD;
+  font-size: 64px;
+  margin-bottom: 4vh;
+  font-weight: 300;
+}
+.projects_main .projects_main_items {
+  position: relative;
+}
+.projects_main .projects_main_items .projects_main_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2em;
+}
+.projects_main .projects_main_items .projects_main_item .projects_main_item_text {
+  background-color: #333333;
+  padding: 3em 20em 3em 2em;
+}
+.projects_main .projects_main_items .projects_main_item .projects_main_item_text h2 {
+  font-size: 64px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.projects_main .projects_main_items .projects_main_item .projects_main_item_text .projects_main_item_text_btn {
+  display: flex;
+  align-items: center;
+  margin-top: 1vh;
+}
+.projects_main .projects_main_items .projects_main_item .projects_main_item_text .projects_main_item_text_btn p {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.projects_main .projects_main_items .projects_main_item .projects_main_item_text .projects_main_item_text_btn img {
+  margin-left: 1vw;
+}
+.projects_main .projects_main_items .projects_main_item .projects_main_item_img {
+  width: 100%;
+  margin-top: 2em;
+}
+.projects_main .projects_main_items .projects_main_item .projects_main_item_img:nth-of-type(1) {
+  margin-left: 0;
+}
+.projects_main .projects_main_btn {
+  position: relative;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4vh;
+  padding: 2em 0 2em 2em;
+  width: 15em;
+  align-self: flex-end;
+}
+.projects_main .projects_main_btn p {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.projects_main .projects_main_btn img {
+  margin-left: 1vw;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+}
+.contact_form .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact_form .container h1 {
+  font-size: 64px;
+  font-weight: 300;
+  color: #BDBDBD;
+  margin-bottom: 2vh;
+}
+.contact_form .container .contact_form_items {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_form .container .contact_form_items form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
+}
+.contact_form .container .contact_form_items form input {
+  background-color: #F3F3F3;
+  border: none;
+  color: #8D8D8D;
+  padding: 1.5vw 10vh 1.5vw 2vh;
+  margin-bottom: 1em;
+  font-size: 1.5vh;
+}
+.contact_form .container .contact_form_items form input:last-of-type {
+  padding: 1.5em 10em 12em 2em;
+  margin-bottom: 0;
+}
+.contact_form .container .contact_form_items img {
+  width: 60vw;
+}
+.contact_form .container .contact_form_btn {
+  position: relative;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  padding: 2em 1.5em;
+  width: 15em;
+}
+.contact_form .container .contact_form_btn p {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.contact_form .container .contact_form_btn img {
+  margin-left: 1vh;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -495,7 +629,7 @@ body {
 }
 
 .container {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 /*# sourceMappingURL=App.css.map */
