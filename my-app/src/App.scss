@@ -1,2 +1,12 @@
 @import "scss/settings/_all.scss";
 @import "scss/style/_all.scss";
+
+body{
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.container{
+  max-width: 90%;
+}

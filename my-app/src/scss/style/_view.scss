@@ -1,0 +1,52 @@
+.view{
+  display: flex;
+  justify-content: center;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    justify-content: center;
+    width: 100%;
+    .view_items {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      .view_item_text {
+
+        h1 {
+          font-size: 4rem;
+          color:#BDBDBD;
+          text-transform: uppercase;
+          font-weight: 300;
+        }
+
+        h2 {
+          font-size: 4rem;
+          font-weight: 700;
+        }
+
+        .view_item_text_arrow_container {
+          img {
+
+          }
+        }
+      }
+
+      .view_item_img {
+
+      }
+
+
+    }
+    .view_btn {
+      p{
+        text-transform: uppercase;
+      }
+      img{
+
+      }
+    }
+  }
+}

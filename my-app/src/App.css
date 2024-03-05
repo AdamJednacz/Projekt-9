@@ -241,4 +241,91 @@ textarea {
   padding: 0.2em 0;
 }
 
+header {
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+header .container .header_menu {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+header .container .header_menu .header_menu_item {
+  font-size: 1rem;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 2vw;
+}
+header .container .header_menu .header_menu_item:first-of-type::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  background-color: black;
+  top: -5px;
+  left: -15px;
+}
+header .container .header_menu .header_menu_item:first-of-type::after {
+  bottom: -5px;
+  left: -15px;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  background-color: black;
+}
+
+.view {
+  display: flex;
+  justify-content: center;
+}
+.view .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.view .container .view_items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.view .container .view_items .view_item_text h1 {
+  font-size: 4rem;
+  color: #BDBDBD;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.view .container .view_items .view_item_text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.view .container .view_btn p {
+  text-transform: uppercase;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 90%;
+}
+
 /*# sourceMappingURL=App.css.map */
