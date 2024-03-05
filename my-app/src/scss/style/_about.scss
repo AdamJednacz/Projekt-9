@@ -15,7 +15,7 @@
       padding: 1em 0;
       .about_item_imgs {
         display: flex;
-        flex-wrap: wrap;
+
         justify-content: space-around;
         align-items: center;
         position: relative;
@@ -47,7 +47,7 @@
           font-size: 18px;
         }
         .about_item_text_btn {
-          width: 30%;
+          width: 10vw;
           display: flex;
           align-items: center;
           padding: 2em 2em 2em 3em;

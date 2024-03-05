@@ -408,7 +408,6 @@ header .container .header_menu .header_menu_item:first-of-type::after {
 }
 .about .container .about_items .about_item_imgs {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   position: relative;
@@ -441,7 +440,7 @@ header .container .header_menu .header_menu_item:first-of-type::after {
   font-size: 18px;
 }
 .about .container .about_items .about_item_text .about_item_text_btn {
-  width: 30%;
+  width: 10vw;
   display: flex;
   align-items: center;
   padding: 2em 2em 2em 3em;
@@ -454,6 +453,41 @@ header .container .header_menu .header_menu_item:first-of-type::after {
   font-weight: 400;
 }
 
+.mission {
+  display: flex;
+  justify-content: center;
+}
+.mission .container {
+  display: flex;
+  flex-direction: column;
+}
+.mission .container h1 {
+  color: #BDBDBD;
+  font-size: 64px;
+}
+.mission .container .mission_items {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.mission .container .mission_items .mission_item {
+  display: flex;
+  align-items: center;
+}
+.mission .container .mission_items .mission_item:first-of-type {
+  margin-right: 10vw;
+}
+.mission .container .mission_items .mission_item span {
+  color: #f0f0f0;
+  font-weight: 700;
+  font-size: 256px;
+  margin-right: 1vw;
+}
+.mission .container .mission_items .mission_item p {
+  width: 50%;
+  font-size: 24px;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -461,7 +495,7 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 80%;
 }
 
 /*# sourceMappingURL=App.css.map */
