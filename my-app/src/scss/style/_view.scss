@@ -1,7 +1,7 @@
 .view{
   display: flex;
   justify-content: center;
-
+  padding: 3em 0;
   .container {
     display: flex;
     align-items: center;
@@ -79,16 +79,18 @@
         }
       }
       .view_item_img {
-        width: 40%;
+        width: 38%;
       }
     }
     .view_btn {
       display: flex;
       align-items: center;
       margin-top: 4vh;
+      border: #BDBDBD solid 1px;
+      padding: 1em;
       p{
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 400;
       }
       img{
         margin-left: 1vw;

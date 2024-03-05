@@ -2,6 +2,10 @@ header{
   display: flex;
   justify-content: center;
   padding: 2em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky; top: 0;
+  background-color: #FFFFFF;
+  z-index: 1;
   .container{
     display: flex;
     align-items: center;
@@ -9,7 +13,6 @@ header{
     justify-content: space-around;
     width: 100%;
     img{
-
     }
     .header_menu{
       width: 50%;
