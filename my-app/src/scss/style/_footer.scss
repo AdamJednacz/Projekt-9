@@ -15,7 +15,7 @@ footer{
       justify-content: space-between;
       padding: 6vh 0;
       img{
-        width: 7.5vw;
+        width: auto;
         height: 10vh;
       }
      .footer_item{
@@ -33,7 +33,7 @@ footer{
          display: inline-block;
          width: 3px;
          height:15vh;
-         background-color: $darker_2C2C2C;
+         background-color: $lighten_2C2C2C;
          left: 55%;
          top: 0;
        }
@@ -43,7 +43,7 @@ footer{
          display: inline-block;
          width: 3px;
          height:15vh;
-         background-color: $darker_2C2C2C;
+         background-color: $lighten_2C2C2C;
          left: -2vw;
          top: 0;
        }
@@ -81,9 +81,9 @@ footer{
       justify-content: center;
       padding: 4vh 0;
       width: 100%;
-      border-top:solid $darker_2C2C2C 1px ;
+      border-top:solid $lighten_2C2C2C 1px ;
       .footer_copy_p {
-        color: $darker_2C2C2C;
+        color: $lighten_2C2C2C;
         font-size: 1.5vh;
       }
     }
