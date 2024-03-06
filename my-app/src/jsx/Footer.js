@@ -22,7 +22,7 @@ const Footer = () => {
                         <h1>Contacts</h1>
                         <div className="footer_item_container">
                             <FontAwesomeIcon className="footer_item_container_icon" icon={faLocationDot} />
-                            <p>1234 Sample Street
+                            <p>1234 Sample Street<br/>
                                 Austin Texas 78681</p>
                         </div>
                         <div className="footer_item_container">
