@@ -20,7 +20,8 @@ header{
       align-items: center;
       flex-direction: row;
       .header_menu_item{
-        color: #333333;
+
+
         font-size:1.5vh;
         font-weight: 400;
         position: relative;
@@ -45,6 +46,10 @@ header{
           width: 70px;
           height: 1px;
           background-color: black;
+        }
+        .link{
+          text-decoration: none;
+          color: #333333;
         }
       }
     }
