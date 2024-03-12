@@ -80,6 +80,8 @@
       }
       .view_item_img {
         height: 70vh;
+        width: 40%;
+
       }
     }
     .view_btn {
@@ -97,4 +99,19 @@
       }
     }
   }
+}
+
+
+.animate{
+  animation: ease-in opacity 1s;
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+
 }

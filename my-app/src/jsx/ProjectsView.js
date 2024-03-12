@@ -5,7 +5,7 @@ import project1 from "../assets/projekt1.png";
 import project2 from "../assets/projekt2.png";
 import project3 from "../assets/projekt3.png";
 import project4 from "../assets/projekt4.png";
-
+import { NavLink} from "react-router-dom";
 const ProjectsView = () => {
     return (
         <section className="projects_view">
@@ -29,10 +29,12 @@ const ProjectsView = () => {
                         <img className="projects_view_item_img" src={project3} alt={project3}/>
                     </div>
                 </div>
+                <NavLink className="link" to={"/projects"} >
                 <div className="projects_view_btn">
-                    <p>All projects</p>
+                     <p>ALL PROJECTS</p>
                     <img src={btn_arrow_white} alt={btn_arrow_white}/>
                 </div>
+                </NavLink>
             </div>
         </section>
     );
