@@ -3,7 +3,6 @@ header{
   justify-content: center;
   padding: 2vh 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
   background-color: #FFFFFF;
   z-index: 1;
   @include phone{
@@ -16,9 +15,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
     img{
-
     }
     .header_menu{
       width: 50%;
