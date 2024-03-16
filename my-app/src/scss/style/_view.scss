@@ -99,10 +99,10 @@
         }
       }
       .view_item_img {
-        height: 70vh;
-        width: 40%;
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
         @include phone{
-          height: 40vh;
           width: 100%;
         }
       }
@@ -110,9 +110,12 @@
     .view_btn {
       display: flex;
       align-items: center;
-      margin-top: 4vh;
       border: #BDBDBD solid 1px;
       padding: 1em;
+      margin-top: 4vh;
+      @include phone{
+        margin-top: 2vh;
+      }
       p{
         text-transform: uppercase;
         font-weight: 400;

@@ -2,36 +2,55 @@
   display: flex;
   justify-content: center;
   padding: 3em  0 ;
+
   .container {
     display: flex;
     flex-direction: column;
 
     h1 {
       color: #BDBDBD;
-      font-size: 64px;
+      font-size: 6vh;
+      @include phone{
+        text-align: center;
+
+      }
     }
 
     .mission_items {
       display: flex;
       width: 100%;
       justify-content: space-around;
-
+      @include phone{
+        flex-direction: column;
+      }
       .mission_item {
         display: flex;
         align-items: center;
+        @include phone{
+          justify-content: space-around;
+        }
         &:first-of-type{
           margin-right: 10vw;
+          @include phone{
+            margin: 0;
+          }
         }
         span {
           color: $lighten_BDBDBD;
           font-weight: 700;
           font-size: 256px;
           margin-right: 1vw ;
+          @include phone{
+            font-size: 192px;
+          }
         }
 
         p {
           width: 50%;
           font-size: 24px;
+          @include phone{
+            font-size: 18px;
+          }
         }
       }
     }
