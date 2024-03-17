@@ -97,8 +97,9 @@
       }
       .view_item_img {
         object-fit: contain;
-        max-width: 50%;
+        max-width: 40%;
         height: auto;
+
         @include phone{
           width: 100%;
           max-width: 100%;
