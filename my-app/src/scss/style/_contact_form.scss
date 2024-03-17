@@ -7,11 +7,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    @include phone{
+
+      align-items:center ;
+    }
     h1 {
-      font-size: 64px;
+      font-size: 8vh;
       font-weight: 300;
       color: #BDBDBD;
       margin-bottom: 2vh;
+
     }
 
     .contact_form_items {
@@ -21,6 +26,9 @@
         display: flex;
         flex-direction: column;
         margin-right: 2em ;
+        @include phone{
+          margin: 0;
+        }
         input {
           background-color: #F3F3F3;
           border: none;
@@ -28,9 +36,16 @@
           padding:1.5vw 20vh 1.5vw 2vh ;
           margin-bottom: 1em;
           font-size: 1.5vh;
+          @include phone{
+            text-align: center;
+            padding: 2.5vh 12vw 2.5vh 12vw;
+          }
           &:last-of-type{
             padding:1.5vw 20vh 12vw 2vh ;
             margin-bottom: 0;
+            @include phone{
+              padding: 2.5vh 12vw 10vh 12vw;
+            }
           }
 
         }
@@ -39,6 +54,10 @@
 
       img {
         width: 60vw;
+        @include phone{
+          display: none;
+        }
+
       }
     }
 
