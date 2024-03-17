@@ -13,17 +13,51 @@ header{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    img{
+    @include phone{
+
+
+    }
+    .header_menu_hamburger {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      .header_icon {
+        font-size: 2rem;
+        display: none;
+        @include phone{
+          display: flex;
+        }
+      }
+
+      img {
+      }
+
+
+    }
+    .header_menu.open {
+      overflow: hidden;
+      width: 100%;
     }
     .header_menu{
       width: 50%;
       display: flex;
       align-items: center;
       flex-direction: row;
+
       @include phone{
-        display: none;
+        padding: 0;
+        position: fixed;
+        width: 0;
+        top: 70px;
+        right: 0;
+        overflow: hidden;
+        transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        flex-direction: column;
+        background-color: #FFFFFF;
+        align-items: flex-start;
       }
       .header_menu_item{
         font-size:1.5vh;
@@ -31,6 +65,16 @@ header{
         position: relative;
         text-transform: uppercase;
         margin: 0 2vw;
+        &:last-of-type{
+          @include phone{
+            padding-bottom: 1em;
+          }
+        }
+        @include phone{
+          font-size: 3vh;
+          padding: 1em 0 1em 2em;
+
+        }
         &:first-of-type::before{
           position: absolute;
           content: "";
@@ -40,6 +84,9 @@ header{
           background-color: black;
           top: -5px;
           left: -15px;
+          @include phone{
+            display: none;
+          }
         }
         &:first-of-type::after{
           bottom: -5px;
@@ -50,6 +97,9 @@ header{
           width: 70px;
           height: 1px;
           background-color: black;
+          @include phone{
+            display: none;
+          }
         }
         .link{
           text-decoration: none;
