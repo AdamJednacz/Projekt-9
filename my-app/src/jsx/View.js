@@ -47,7 +47,7 @@ const View = () => {
                             <span>02</span>
                         </div>
                     </div>
-                    <img className={`view_item_img ${isClicked ? "animate" : ""}`} src={images[imageIndex]} alt={`view${imageIndex}`}/>
+                    <img className={` ${isClicked ? "animate" : ""} ${imageIndex === 1 ? "view_item_img_2" : "view_item_img"}`} src={images[imageIndex]} alt={`view${imageIndex}`}/>
                 </div>
                 <div className="view_btn">
                     <p>View Project</p>
