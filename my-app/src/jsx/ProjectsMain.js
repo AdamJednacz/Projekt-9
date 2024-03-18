@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import left from "../assets/L_arrow.png";
 import right from "../assets/R_arrow.png";
 import btn_arrow from "../assets/btn_view_arrow.svg";
@@ -19,7 +19,7 @@ const ProjectsMain = () => {
                             <p className="projects_main_item_text_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div className="projects_main_item_text_btn">
                                 <p className="projects_main_item_text_btn_p">View More</p>
-                                <img src={btn_arrow} alt={btn_arrow}/>
+                                <img className="projects_main_item_text_btn_img" src={btn_arrow} alt={btn_arrow}/>
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const ProjectsMain = () => {
                             <p className="projects_main_item_text_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div className="projects_main_item_text_btn">
                                 <p className="projects_main_item_text_btn_p">view More</p>
-                                <img src={btn_arrow} alt={btn_arrow}/>
+                                <img className="projects_main_item_text_btn_img" src={btn_arrow} alt={btn_arrow}/>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const ProjectsMain = () => {
                             <p className="projects_main_item_text_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <div className="projects_main_item_text_btn">
                                 <p className="projects_main_item_text_btn_p">view More</p>
-                                <img src={btn_arrow} alt={btn_arrow}/>
+                                <img className="projects_main_item_text_btn_img" src={btn_arrow} alt={btn_arrow}/>
                             </div>
                         </div>
                     </div>
