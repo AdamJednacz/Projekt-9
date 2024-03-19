@@ -29,11 +29,12 @@
         background-color: $darker_FBFBFB;
         margin: 2em 0;
         @include phone{
-          display: flex;
           flex-direction: column;
         }
         img{
-
+            @include phone{
+              width: 100%;
+            }
         }
         .projects_main_item_text{
           display: flex;
@@ -53,7 +54,9 @@
             font-size: 2vh;
             width: 65%;
             margin: 4vh 0 0 4vh;
-
+              @include phone{
+                margin-top:0;
+              }
           }
           .projects_main_item_text_btn{
             width: 10em;
@@ -65,13 +68,13 @@
             margin: 4vh 0 4vh 4vh;
             .projects_main_item_text_btn_p{
               text-transform: uppercase;
-              font-size: 12px;
+              font-size: 1.4vh;
               margin-right: 1em;
               font-weight: 400;
               line-height: 12px;
             }
-            img{
-
+            .projects_main_item_text_btn_img{
+                width: auto;
             }
           }
         }

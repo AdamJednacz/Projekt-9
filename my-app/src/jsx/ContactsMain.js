@@ -6,6 +6,7 @@ const ContactsMain = () => {
         <section className="contacts_main">
             <div className="container">
                 <div className="contacts_main_items">
+                    <div className="contacts_main_items_text">
                     <h1>Contact</h1>
                     <h1>Information</h1>
                     <p>Company Name</p>
@@ -15,8 +16,11 @@ const ContactsMain = () => {
                     <div className="contacts_main_item_btn">
                         <p>Contact Us</p>
                     </div>
+
                 </div>
-                <img src={map} alt={map}/>
+                    <img src={map} alt={map}/>
+                </div>
+
             </div>
         </section>
     );

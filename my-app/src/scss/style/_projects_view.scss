@@ -20,16 +20,18 @@
     .projects_view_item {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       width: 100%;
-      gap: 2em;
+
       @include phone{
         flex-direction: column;
         gap: 0;
       }
       .projects_view_item_text {
         background-color: #333333;
-        padding: 3em 20em 3em 2em;
+        padding: 3.5em 16em 3.5em 2em;
+
+
         @include phone {
           padding: 8vw;
           width: 80%;
@@ -59,19 +61,25 @@
           }
         }
       .projects_view_item_text_img {
+        height: auto;
+        object-fit: contain;
+        max-width: 100%;
         @include phone{
           width: 100%;
           margin-top: 2em;
         }
       }
       .projects_view_item_img {
-        width: 100%;
+        height: auto;
         margin-top: 2em;
+        object-fit: contain;
+        max-width: 100%;
         @include phone{
           width: 100%;
         }
-        &:nth-of-type(1) {
-          margin-left: 0;
+
+        &:nth-of-type(2){
+          margin:2em 2em 0 2em;
         }
       }
     }
