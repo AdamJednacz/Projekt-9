@@ -10,7 +10,9 @@
       font-size: 8vh;
       color: #BDBDBD;
       font-weight: 300;
-
+      @include phone{
+        text-align: center;
+      }
       &:nth-of-type(2){
         color: #333333;
         font-weight: 700;
@@ -24,8 +26,15 @@
       margin-bottom: 4vh;
       padding: 2vh 0 0 0 ;
       border-top: $lighten_BDBDBD solid 1px;
+      @include phone{
+       justify-content: center;
+      }
       .photo_gallery_main_item{
         height: 29vh;
+        @include phone{
+          height:auto;
+          width: 40%;
+        }
       }
 
     }
@@ -36,6 +45,9 @@
       color: #BDBDBD;
       width: auto;
       margin-bottom: 4vh;
+      @include phone{
+        justify-content: center;
+      }
       .photos_gallery_main_counter_numbers{
         display: flex;
         flex-direction: column;
@@ -51,6 +63,9 @@
           height: 2px;
           background-color:#BDBDBD;
           transform: rotate(-45deg);
+          @include phone{
+            width: 10vw;
+          }
         }
       }
       .photos_gallery_main_arrows{

@@ -107,11 +107,9 @@
         object-fit: contain;
         max-width: 40%;
         height: auto;
-
         @include phone{
           width: 100%;
           max-width: 100%;
-
         }
       }
     }

@@ -10,7 +10,9 @@
       font-size: 8vh;
       color: #BDBDBD;
       font-weight: 300;
-
+      @include phone{
+        text-align: center;
+      }
       &:nth-of-type(2){
         color: #333333;
         font-weight: 700;
@@ -26,6 +28,10 @@
         display: flex;
         background-color: $darker_FBFBFB;
         margin: 2em 0;
+        @include phone{
+          display: flex;
+          flex-direction: column;
+        }
         img{
 
         }
@@ -37,6 +43,9 @@
             font-weight: 300;
             color: #BDBDBD;
             margin: 4vh 0 8vh 4vh;
+            @include phone{
+              margin-bottom: 0;
+            }
           }
           .projects_main_item_text_p{
             font-weight: 300;
@@ -75,6 +84,9 @@
       color: #BDBDBD;
       width: auto;
       margin-bottom: 4vh;
+      @include phone{
+        justify-content: center;
+      }
       .projects_main_counter_numbers{
         display: flex;
         color: #333333;
@@ -91,6 +103,9 @@
           height: 2px;
           background-color:#BDBDBD;
           transform: rotate(-45deg);
+          @include phone{
+            width: 10vw;
+          }
         }
 
       }
