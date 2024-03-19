@@ -36,10 +36,16 @@
           color: #BDBDBD;
           text-transform: uppercase;
           font-weight: 300;
+          @include phone{
+            font-size: 6vh;
+          }
         }
         h2 {
           font-size: 8vh;
           font-weight: 700;
+          @include phone{
+            font-size: 6vh;
+          }
         }
         .view_item_text_arrow_container {
           width: 100%;

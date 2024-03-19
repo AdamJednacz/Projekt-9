@@ -16,7 +16,10 @@
       font-weight: 300;
       color: #BDBDBD;
       margin-bottom: 2vh;
-
+      @include phone{
+        text-align: center;
+        font-size: 6vh;
+      }
     }
 
     .contact_form_items {

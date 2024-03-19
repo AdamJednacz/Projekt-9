@@ -12,6 +12,7 @@
       font-weight: 300;
       @include phone{
         text-align: center;
+        font-size: 6vh;
       }
       &:nth-of-type(2){
         color: #333333;
@@ -53,9 +54,10 @@
             line-height: 25px;
             font-size: 2vh;
             width: 65%;
-            margin: 4vh 0 0 4vh;
+            margin: 4vh ;
               @include phone{
-                margin-top:0;
+                margin-bottom: 0;
+                width: auto;
               }
           }
           .projects_main_item_text_btn{
