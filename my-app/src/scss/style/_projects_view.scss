@@ -31,17 +31,21 @@
       .projects_view_item_text {
         background-color: #333333;
         padding: 3.5em 16em 3.5em 2em;
-
-
         @include phone {
           padding: 8vw;
           width: 80%;
           text-align: center;
         }
+        @include tablet{
+        padding: 4vh  20vw 4vh 6vw;
+        }
         h2 {
           font-size: 5.1vh;
           color: #FFFFFF;
           font-weight: 700;
+          @include tablet{
+            font-size: 3vh;
+          }
         }
           .projects_view_item_text_btn {
             display: flex;
@@ -68,6 +72,9 @@
         @include phone{
           width: 100%;
           margin-top: 2em;
+        }
+        @include tablet{
+          width: 67.5%;
         }
       }
       .projects_view_item_img {

@@ -12,6 +12,9 @@
         text-align: center;
         font-size: 5vh;
       }
+      @include tablet{
+        text-align: center;
+      }
     }
     .mission_items {
       display: flex;
@@ -26,10 +29,16 @@
         @include phone{
           justify-content: space-around;
         }
+        @include tablet{
+          width: 50%;
+        }
         &:first-of-type{
           margin-right: 10vw;
           @include phone{
             margin: 0;
+          }
+          @include tablet{
+            margin-right: 0;
           }
         }
         span {
@@ -40,11 +49,22 @@
           @include phone{
             font-size: 192px;
           }
+          @include tablet{
+            font-size: 192px;
+          }
+          &:nth-of-type(1){
+            @include tablet{
+              margin-right: 2vw;
+            }
+          }
         }
         p {
           width: 50%;
           font-size: 24px;
           @include phone{
+            font-size: 18px;
+          }
+          @include tablet{
             font-size: 18px;
           }
         }

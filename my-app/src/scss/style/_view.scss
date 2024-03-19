@@ -32,7 +32,7 @@
           margin-top: 2vh;
         }
         @include tablet{
-          height: 100%;
+          height: 100%  ;
         }
         h1 {
           font-size: 8vh;
@@ -140,9 +140,16 @@
       @include phone{
         margin-top: 2vh;
       }
+
+      @include tablet{
+        padding: 2vw;
+      }
       p{
         text-transform: uppercase;
         font-weight: 400;
+        @include tablet{
+          font-size: 1.5rem;
+        }
       }
       img{
         margin-left: 1vw;
