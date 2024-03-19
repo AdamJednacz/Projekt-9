@@ -31,6 +31,9 @@
           height: auto;
           margin-top: 2vh;
         }
+        @include tablet{
+          height: 100%;
+        }
         h1 {
           font-size: 8vh;
           color: #BDBDBD;
@@ -39,11 +42,17 @@
           @include phone{
             font-size: 6vh;
           }
+          @include tablet{
+            font-size: 6vh;
+          }
         }
         h2 {
           font-size: 8vh;
           font-weight: 700;
           @include phone{
+            font-size: 6vh;
+          }
+          @include tablet{
             font-size: 6vh;
           }
         }
@@ -116,6 +125,9 @@
         @include phone{
           width: 100%;
           max-width: 100%;
+        }
+        @include tablet{
+          max-width: 50%;
         }
       }
     }

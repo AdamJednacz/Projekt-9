@@ -71,6 +71,7 @@ header{
         flex-direction: column;
         background-color: #FFFFFF;
         align-items: flex-start;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
       @include tablet{
         padding: 0;
@@ -83,6 +84,7 @@ header{
         flex-direction: column;
         background-color: #FFFFFF;
         align-items: flex-start;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
       .header_menu_item{
         font-size:1.5vh;
@@ -93,6 +95,11 @@ header{
         &:last-of-type{
           @include phone{
             padding-bottom: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          @include tablet{
+            padding-bottom: 1em;
+
           }
         }
         @include phone{
