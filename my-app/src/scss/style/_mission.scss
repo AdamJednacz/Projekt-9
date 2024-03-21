@@ -11,6 +11,7 @@
       @include phone{
         text-align: center;
         font-size: 5vh;
+        word-wrap: anywhere;
       }
       @include tablet{
         text-align: center;
@@ -50,7 +51,7 @@
             font-size: 192px;
           }
           @include tablet{
-            font-size: 192px;
+            font-size: 24vh;
           }
           &:nth-of-type(1){
             @include tablet{
@@ -65,7 +66,7 @@
             font-size: 18px;
           }
           @include tablet{
-            font-size: 18px;
+            font-size: 1.8vh;
           }
         }
       }

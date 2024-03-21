@@ -15,6 +15,9 @@
       text-align: center;
       font-size: 6vh;
     }
+    @include tablet{
+      text-align:center ;
+    }
   }
   .projects_view_items {
     position: relative;
@@ -28,6 +31,10 @@
         flex-direction: column;
         gap: 0;
       }
+      @include tablet{
+        flex-direction: column;
+        gap: 0;
+      }
       .projects_view_item_text {
         background-color: #333333;
         padding: 3.5em 16em 3.5em 2em;
@@ -37,7 +44,8 @@
           text-align: center;
         }
         @include tablet{
-        padding: 4vh  20vw 4vh 6vw;
+
+        width: 50%;
         }
         h2 {
           font-size: 5.1vh;
@@ -74,7 +82,7 @@
           margin-top: 2em;
         }
         @include tablet{
-          width: 67.5%;
+          width: 100%;
         }
       }
       .projects_view_item_img {
@@ -85,7 +93,9 @@
         @include phone{
           width: 100%;
         }
-
+        @include tablet{
+          width: 100%;
+        }
         &:nth-of-type(2){
           margin:2em 2em 0 2em;
         }
