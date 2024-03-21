@@ -26,26 +26,41 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
-
+      height: 50%;
       @include phone{
         flex-direction: column;
         gap: 0;
+        justify-content: normal;
+        height: auto;
       }
       @include tablet{
         flex-direction: column;
+        justify-content: normal;
+        height: auto;
         gap: 0;
       }
       .projects_view_item_text {
+        display: flex;
         background-color: #333333;
-        padding: 3.5em 16em 3.5em 2em;
+        width: 100%;
+        height: 80%;
+        padding: 1.5vh 0 ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         @include phone {
-          padding: 8vw;
-          width: 80%;
-          text-align: center;
+          width: 100%;
+          align-items: center;
+          padding: 5vh 0;
+          height: auto;
+
         }
         @include tablet{
-
-        width: 50%;
+        height: auto;
+        width: 60%;
+        align-items: center;
+        padding: 5vh 0;
+          justify-content: normal;
         }
         h2 {
           font-size: 5.1vh;
@@ -62,6 +77,10 @@
             @include phone {
               justify-content: center;
               align-items: center;
+            }
+            @include tablet{
+              margin-top: 4vh;
+              flex-direction: column;
             }
             p {
               text-transform: uppercase;
@@ -82,7 +101,7 @@
           margin-top: 2em;
         }
         @include tablet{
-          width: 100%;
+          width: 60%;
         }
       }
       .projects_view_item_img {
@@ -94,7 +113,8 @@
           width: 100%;
         }
         @include tablet{
-          width: 100%;
+          width: 60%;
+
         }
         &:nth-of-type(2){
           margin:2em 2em 0 2em;
@@ -106,6 +126,9 @@
     align-self: flex-end;
     text-decoration: none;
     @include phone{
+      align-self: center;
+    }
+    @include tablet{
       align-self: center;
     }
     .projects_view_btn {

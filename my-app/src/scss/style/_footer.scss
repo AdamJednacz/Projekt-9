@@ -19,10 +19,19 @@ footer{
         flex-direction: column;
         align-items: center;
       }
+      @include tablet{
+        flex-direction: column;
+        align-items: center;
+      }
       img{
         width: auto;
         height: 10vh;
         @include phone{
+          height: auto;
+          max-width: 40%;
+          margin-bottom: 2vh;
+        }
+        @include tablet{
           height: auto;
           max-width: 40%;
           margin-bottom: 2vh;
@@ -38,14 +47,25 @@ footer{
          width: auto;
          margin: 2vh 0;
        }
+       @include tablet{
+         width: auto;
+         margin: 2vh 0;
+       }
        &:first-of-type{
          @include phone {
+           display: none;
+         }
+         @include tablet{
            display: none;
          }
        }
        &:last-of-type{
          justify-content: normal;
          @include phone{
+           margin-top: 4vh;
+           margin-bottom: 0;
+         }
+         @include tablet{
            margin-top: 4vh;
            margin-bottom: 0;
          }
@@ -62,6 +82,9 @@ footer{
          @include phone{
            display: none;
          }
+         @include tablet{
+           display: none;
+         }
        }
        &::before{
          position: absolute;
@@ -73,6 +96,9 @@ footer{
          left: -10%;
          top: 0;
          @include phone{
+           display: none;
+         }
+         @include tablet{
            display: none;
          }
        }
@@ -87,6 +113,9 @@ footer{
           font-size: 1.8vh;
          @include phone{
            text-align: center;
+         }
+         @include tablet{
+          text-align: center;
          }
        }
        p{
