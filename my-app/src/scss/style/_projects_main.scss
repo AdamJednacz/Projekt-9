@@ -14,6 +14,9 @@
         text-align: center;
         font-size: 6vh;
       }
+      @include tablet{
+        text-align: center;
+      }
       &:nth-of-type(2){
         color: #333333;
         font-weight: 700;
@@ -32,10 +35,14 @@
         @include phone{
           flex-direction: column;
         }
+        @include tablet{
+          flex-direction: column;
+        }
         img{
             @include phone{
               width: 100%;
             }
+
         }
         .projects_main_item_text{
           display: flex;
@@ -46,6 +53,9 @@
             color: #BDBDBD;
             margin: 4vh 0 8vh 4vh;
             @include phone{
+              margin-bottom: 0;
+            }
+            @include tablet{
               margin-bottom: 0;
             }
           }
@@ -59,6 +69,10 @@
                 margin-bottom: 0;
                 width: auto;
               }
+            @include tablet{
+              margin-bottom: 0;
+              width:auto;
+            }
           }
           .projects_main_item_text_btn{
             width: 10em;
@@ -92,6 +106,9 @@
       @include phone{
         justify-content: center;
       }
+      @include tablet{
+        justify-content: center;
+      }
       .projects_main_counter_numbers{
         display: flex;
         color: #333333;
@@ -110,6 +127,9 @@
           transform: rotate(-45deg);
           @include phone{
             width: 10vw;
+          }
+          @include tablet{
+            width: 5vw;
           }
         }
 
