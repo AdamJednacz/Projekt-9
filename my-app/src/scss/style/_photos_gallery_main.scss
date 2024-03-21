@@ -10,6 +10,7 @@
       display: flex;
       justify-content: center;
     }
+
     h1{
       font-size: 8vh;
       color: #BDBDBD;
@@ -17,6 +18,9 @@
       @include phone{
         text-align: center;
         font-size: 6vh;
+      }
+      @include tablet{
+        text-align: center;
       }
       &:nth-of-type(2){
         color: #333333;
@@ -32,17 +36,20 @@
       padding: 2vh 0 0 0 ;
       border-top: $lighten_BDBDBD solid 1px;
       @include phone{
-
-
         justify-content: center;
-
+      }
+      @include tablet{
+        justify-content: center;
       }
       .photo_gallery_main_item{
         height: 29vh;
         @include phone{
           height:auto;
           width: 40%;
-
+        }
+        @include tablet{
+          height: auto;
+          width: 25%;
         }
       }
 
@@ -55,6 +62,9 @@
       width: auto;
       margin-bottom: 4vh;
       @include phone{
+        justify-content: center;
+      }
+      @include tablet{
         justify-content: center;
       }
       .photos_gallery_main_counter_numbers{
@@ -74,6 +84,9 @@
           transform: rotate(-45deg);
           @include phone{
             width: 10vw;
+          }
+          @include tablet{
+            width: 5vw;
           }
         }
       }
