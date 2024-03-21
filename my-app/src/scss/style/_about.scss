@@ -106,13 +106,12 @@
         }
         h1 {
           color: #BDBDBD;
-
           font-size: 6vh;
         }
         .about_item_text_p {
           width: 90%;
           font-size: 2.3vh;
-          line-height: 25px;
+          line-height: 40px;
           margin: 4vh 0;
           @include phone{
             width: auto;
