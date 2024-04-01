@@ -2,33 +2,51 @@
   display: flex;
   justify-content: center;
   padding: 3em 0;
+
   .container {
     display: flex;
     flex-direction: column;
   }
+
   h1 {
     color: #BDBDBD;
     font-size: 8vh;
     margin-bottom: 4vh;
     font-weight: 300;
-    @include phone{
+    @include phone {
+      text-align: center;
+      font-size: 6vh;
+    }
+    @include tablet {
       text-align: center;
     }
   }
+
   .projects_view_items {
     position: relative;
+
     .projects_view_item {
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-
-      @include phone{
+      height: 50%;
+      @include phone {
         flex-direction: column;
         gap: 0;
+        justify-content: normal;
+        height: auto;
       }
+      @include tablet {
+        flex-direction: column;
+        justify-content: normal;
+        height: auto;
+        gap: 0;
+      }
+
       .projects_view_item_text {
         display: flex;
+
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -40,12 +58,33 @@
           padding: 2vw 0;
           width: 100%;
           text-align: center;
-        }
-        h2 {
-          font-size: 5.2vh;
-          color: #FFFFFF;
-          font-weight: 700;
-        }
+
+          background-color: #333333;
+
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          @include phone {
+            width: 100%;
+            align-items: center;
+            padding: 5vh 0;
+            height: auto;
+
+          }
+          @include tablet {
+            height: auto;
+            width: 60%;
+            align-items: center;
+            padding: 5vh 0;
+          }
+          h2 {
+            font-size: 5.2vh;
+            color: #FFFFFF;
+            font-weight: 700;
+            @include tablet {
+              font-size: 3vh;
+            }
+          }
           .projects_view_item_text_btn {
             display: flex;
             align-items: center;
@@ -54,63 +93,86 @@
               justify-content: center;
               align-items: center;
             }
+            @include tablet {
+              margin-top: 4vh;
+              flex-direction: column;
+            }
+
             p {
               text-transform: uppercase;
               font-weight: 300;
               color: #FFFFFF;
             }
+
             img {
               margin-left: 1vw;
             }
           }
         }
-      .projects_view_item_text_img {
-        height: 30vh;
-        object-fit: contain;
-        max-width: 90%;
-        @include phone{
-          max-width: 100%;
-          margin-top: 2em;
-        }
-      }
-      .projects_view_item_img {
-        height: auto;
-        margin-top: 2em;
-        object-fit: contain;
-        max-width: 100%;
-        @include phone{
-          width: 100%;
+
+        .projects_view_item_text_img {
+          height: 30vh;
+          object-fit: contain;
+          max-width: 90%;
+          @include phone {
+            max-width: 100%;
+            margin-top: 2em;
+          }
+          @include tablet {
+            width: 60%;
+          }
         }
 
-        &:nth-of-type(2){
-          margin:2em 2em 0 2em;
+        .projects_view_item_img {
+          height: auto;
+          margin-top: 2em;
+          object-fit: contain;
+          max-width: 100%;
+          @include phone {
+            width: 100%;
+          }
+          @include tablet {
+            width: 60%;
+
+          }
+
+          &:nth-of-type(2) {
+            margin: 2em 2em 0 2em;
+          }
         }
       }
     }
-  }
-  .link {
-    align-self: flex-end;
-    text-decoration: none;
-    @include phone{
-      align-self: center;
-    }
-    .projects_view_btn {
-      position: relative;
-      background-color: #333333;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin-top: 4vh;
-      padding: 2em 0 2em 2em;
-      width: 15em;
-      p {
-        text-transform: uppercase;
-        font-weight: 300;
-        color: #FFFFFF;
-        text-decoration: none;
+
+    .link {
+      align-self: flex-end;
+      text-decoration: none;
+      @include phone {
+        align-self: center;
       }
-      img {
-        margin-left: 1vw;
+      @include tablet {
+        align-self: center;
+      }
+
+      .projects_view_btn {
+        position: relative;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 4vh;
+        padding: 2em 0 2em 2em;
+        width: 15em;
+
+        p {
+          text-transform: uppercase;
+          font-weight: 300;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+
+        img {
+          margin-left: 1vw;
+        }
       }
     }
   }

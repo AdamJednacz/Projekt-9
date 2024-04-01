@@ -10,7 +10,13 @@
       font-size: 8vh;
       color: #BDBDBD;
       font-weight: 300;
-
+      @include phone{
+        text-align: center;
+        font-size: 6vh;
+      }
+      @include tablet{
+        text-align: center;
+      }
       &:nth-of-type(2){
         color: #333333;
         font-weight: 700;
@@ -29,10 +35,14 @@
         @include phone{
           flex-direction: column;
         }
+        @include tablet{
+          flex-direction: column;
+        }
         img{
             @include phone{
               width: 100%;
             }
+
         }
         .projects_main_item_text{
           display: flex;
@@ -43,7 +53,10 @@
             color: #BDBDBD;
             margin: 4vh 0 8vh 4vh;
             @include phone{
-              margin: 4vh 0 4vh 4vh;
+              margin-bottom: 0;
+            }
+            @include tablet{
+              margin-bottom: 0;
             }
           }
           .projects_main_item_text_p{
@@ -51,10 +64,15 @@
             line-height: 25px;
             font-size: 2vh;
             width: 65%;
-            margin: 4vh 0 0 4vh;
+            margin: 4vh ;
               @include phone{
-                margin-top:0;
+                margin-bottom: 0;
+                width: auto;
               }
+            @include tablet{
+              margin-bottom: 0;
+              width:auto;
+            }
           }
           .projects_main_item_text_btn{
             width: 10em;
@@ -85,6 +103,12 @@
       color: #BDBDBD;
       width: auto;
       margin-bottom: 4vh;
+      @include phone{
+        justify-content: center;
+      }
+      @include tablet{
+        justify-content: center;
+      }
       .projects_main_counter_numbers{
         display: flex;
         color: #333333;
@@ -103,6 +127,9 @@
           transform: rotate(-45deg);
           @include phone{
             width: 10vw;
+          }
+          @include tablet{
+            width: 5vw;
           }
         }
 

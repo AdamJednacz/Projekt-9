@@ -31,15 +31,30 @@
           height: auto;
           margin-top: 2vh;
         }
+        @include tablet{
+          height: 100%  ;
+        }
         h1 {
           font-size: 8vh;
           color: #BDBDBD;
           text-transform: uppercase;
           font-weight: 300;
+          @include phone{
+            font-size: 6vh;
+          }
+          @include tablet{
+            font-size: 6vh;
+          }
         }
         h2 {
           font-size: 8vh;
           font-weight: 700;
+          @include phone{
+            font-size: 6vh;
+          }
+          @include tablet{
+            font-size: 6vh;
+          }
         }
         .view_item_text_arrow_container {
           width: 100%;
@@ -107,11 +122,12 @@
         object-fit: contain;
         max-width: 40%;
         height: auto;
-
         @include phone{
           width: 100%;
           max-width: 100%;
-
+        }
+        @include tablet{
+          max-width: 50%;
         }
       }
     }
@@ -124,9 +140,16 @@
       @include phone{
         margin-top: 2vh;
       }
+
+      @include tablet{
+        padding: 2vw;
+      }
       p{
         text-transform: uppercase;
         font-weight: 400;
+        @include tablet{
+          font-size: 1.5rem;
+        }
       }
       img{
         margin-left: 1vw;

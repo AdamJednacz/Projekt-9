@@ -9,6 +9,11 @@ header{
      position: sticky;
      top: 0;
   }
+  @include tablet{
+    position: sticky;
+    top: 0;
+    padding: 4vh 0;
+  }
   .container{
     display: flex;
     align-items: center;
@@ -30,9 +35,16 @@ header{
         @include phone{
           display: flex;
         }
+        @include tablet{
+          display: flex;
+          font-size: 3rem;
+        }
       }
 
       img {
+        @include tablet{
+          width: 10vw;
+        }
       }
 
 
@@ -40,6 +52,7 @@ header{
     .header_menu.open {
       overflow: hidden;
       width: 100%;
+      z-index: 2;
     }
     .header_menu{
       width: 50%;
@@ -58,6 +71,20 @@ header{
         flex-direction: column;
         background-color: #FFFFFF;
         align-items: flex-start;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      @include tablet{
+        padding: 0;
+        position: fixed;
+        width: 0;
+        top: 12vw;
+        right: 0;
+        overflow: hidden;
+        transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        flex-direction: column;
+        background-color: #FFFFFF;
+        align-items: flex-start;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
       .header_menu_item{
         font-size:1.5vh;
@@ -68,12 +95,21 @@ header{
         &:last-of-type{
           @include phone{
             padding-bottom: 1em;
+
+          }
+          @include tablet{
+            padding-bottom: 1em;
+
           }
         }
         @include phone{
           font-size: 3vh;
           padding: 1em 0 1em 2em;
 
+        }
+        @include tablet{
+          font-size: 3vh;
+          padding: 1em 0 1em 2em;
         }
         &:first-of-type::before{
           position: absolute;
@@ -85,6 +121,9 @@ header{
           top: -5px;
           left: -15px;
           @include phone{
+            display: none;
+          }
+          @include tablet{
             display: none;
           }
         }
@@ -100,6 +139,10 @@ header{
           @include phone{
             display: none;
           }
+          @include tablet{
+            display: none;
+          }
+
         }
         .link{
           text-decoration: none;
