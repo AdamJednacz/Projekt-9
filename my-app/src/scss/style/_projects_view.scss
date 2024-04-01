@@ -28,17 +28,21 @@
         gap: 0;
       }
       .projects_view_item_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         background-color: #333333;
-        padding: 3.5em 16em 3.5em 2em;
-
+        padding: 0 25em 0 5em;
+        height: 30vh;
 
         @include phone {
-          padding: 8vw;
-          width: 80%;
+          padding: 2vw 0;
+          width: 100%;
           text-align: center;
         }
         h2 {
-          font-size: 5.1vh;
+          font-size: 5.2vh;
           color: #FFFFFF;
           font-weight: 700;
         }
@@ -61,11 +65,11 @@
           }
         }
       .projects_view_item_text_img {
-        height: auto;
+        height: 30vh;
         object-fit: contain;
-        max-width: 100%;
+        max-width: 90%;
         @include phone{
-          width: 100%;
+          max-width: 100%;
           margin-top: 2em;
         }
       }
